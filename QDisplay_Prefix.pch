@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'QDisplay' target in the 'QDisplay' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
