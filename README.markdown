@@ -22,19 +22,15 @@ QDisplay does only one thing: display text.  You can only set the text using App
 
 *Example 1:*
 
-<code>
-tell application "QDisplay"
-	set message to "Put your message here."
-end tell
-</code>
+	tell application "QDisplay"
+		set message to "Put your message here."
+	end tell
 
 *Example 2:*
 
-<code>
-tell front workspace
-	set myMessage to q name of cue "1"
-end tell
-tell application "QDisplay"
-	set message to myMessage
-end tell
-</code>
+	tell front workspace
+		set myMessage to q name of cue "1"
+	end tell
+	tell application "QDisplay"
+		set message to myMessage
+	end tell
