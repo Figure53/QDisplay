@@ -27,6 +27,13 @@
 
 #import "QDisplayApp.h"
 
+@interface QDisplayApp (Private)
+
+- (void) updateCountdownLabel:(NSTimer *)t;
+
+@end
+
+
 @implementation QDisplayApp
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -34,6 +41,8 @@
 	[window center];
 	[window makeKeyAndOrderFront:self];
 	message = [[label stringValue] copy];
+    countdownTargetTimeInterval = 0.0;
+    countdownTimer = nil;
 }
 
 @synthesize window;
@@ -50,5 +59,54 @@
 }
 
 @synthesize message;
+
+- (void) setTimeRemaining:(NSNumber *)newTime
+{
+    double newSeconds = [newTime doubleValue];
+    if (newSeconds <= 0.0) return;
+    countdownTargetTimeInterval = [NSDate timeIntervalSinceReferenceDate] + newSeconds;
+    [countdownTimer invalidate];
+    countdownTimer = [NSTimer scheduledTimerWithTimeInterval:0.03 target:self selector:@selector(updateCountdownLabel:) userInfo:nil repeats:YES];
+}
+
+- (NSNumber *) timeRemaining
+{
+    return [NSNumber numberWithDouble:countdownTargetTimeInterval - [NSDate timeIntervalSinceReferenceDate]];
+}
+
+@end
+
+
+@implementation QDisplayApp (Private)
+
+- (void) updateCountdownLabel:(NSTimer *)t
+{
+    double seconds = countdownTargetTimeInterval - [NSDate timeIntervalSinceReferenceDate];
+    if (seconds < 0)
+    {
+        [countdownTimer invalidate];
+        countdownTimer = nil;
+        
+        [countdownLabel setStringValue:@""];
+    }
+    else
+    {
+        int hours = (int)(seconds / 3600.0);
+        seconds = fmod(seconds, 3600.0);
+        int minutes = (int)(seconds / 60.0);
+        seconds = fmod(seconds, 60.0);
+        if (hours > 0)
+            [countdownLabel setStringValue:[NSString stringWithFormat:@"%d:%02d:%@%2.1f",
+                                            hours,
+                                            minutes,
+                                            seconds < 10.0 ? @"0" : @"",
+                                            seconds]];
+        else
+            [countdownLabel setStringValue:[NSString stringWithFormat:@"%d:%@%2.1f",
+                                            minutes,
+                                            seconds < 10.0 ? @"0" : @"",
+                                            seconds]];
+    }
+}
 
 @end

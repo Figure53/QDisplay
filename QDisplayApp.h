@@ -32,9 +32,13 @@
 	NSString *message;
     NSWindow *window;
 	IBOutlet NSTextField *label;
+    IBOutlet NSTextField *countdownLabel;
+    NSTimer *countdownTimer;
+    double countdownTargetTimeInterval;
 }
 
 @property (copy) NSString *message;
+@property (copy) NSNumber *timeRemaining;
 @property (retain) IBOutlet NSWindow *window;
 
 @end

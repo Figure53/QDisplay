@@ -60,6 +60,9 @@
 			<property name="message" code="qStr" description="The string to display." type="text">
 				<cocoa key="message"/>
 			</property>
+			<property name="timeRemaining" code="qTim" description="The time in seconds to start counting down from." type="number">
+				<cocoa key="timeRemaining"/>
+			</property>
 			<responds-to command="open">
 				<cocoa method="handleOpenScriptCommand:"/>
 			</responds-to>
