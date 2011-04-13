@@ -206,7 +206,7 @@
 			<object class="NSWindowTemplate" id="55987706">
 				<int key="NSWindowStyleMask">8221</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{340, 540}, {601, 149}}</string>
+				<string key="NSWindowRect">{{340, 509}, {604, 180}}</string>
 				<int key="NSWTFlags">611845120</int>
 				<string key="NSWindowTitle"/>
 				<string key="NSWindowClass">NSPanel</string>
@@ -221,14 +221,14 @@
 						<object class="NSTextField" id="694766422">
 							<reference key="NSNextResponder" ref="994473852"/>
 							<int key="NSvFlags">274</int>
-							<string key="NSFrame">{{17, 20}, {567, 109}}</string>
+							<string key="NSFrame">{{17, 32}, {570, 128}}</string>
 							<reference key="NSSuperview" ref="994473852"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="677729986">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">272891904</int>
 								<string type="base64-UTF8" key="NSContents">dGVsbCBhcHBsaWNhdGlvbiAiUURpc3BsYXkiCglzZXQgbWVzc2FnZSB0byAiUHV0IHlvdXIgbWVzc2Fn
-ZSBoZXJlLiIKZW5kIHRlbGw</string>
+ZSBoZXJlLiIKCXNldCB0aW1lUmVtYWluaW5nIHRvIDEwLjUKZW5kIHRlbGw</string>
 								<object class="NSFont" key="NSSupport" id="170208087">
 									<string key="NSName">ArialMT</string>
 									<double key="NSSize">28</double>
@@ -256,7 +256,7 @@ ZSBoZXJlLiIKZW5kIHRlbGw</string>
 						<object class="NSTextField" id="570944635">
 							<reference key="NSNextResponder" ref="994473852"/>
 							<int key="NSvFlags">309</int>
-							<string key="NSFrame">{{213, 10}, {175, 32}}</string>
+							<string key="NSFrame">{{214, 9}, {175, 32}}</string>
 							<reference key="NSSuperview" ref="994473852"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="219476392">
@@ -274,7 +274,7 @@ ZSBoZXJlLiIKZW5kIHRlbGw</string>
 							</object>
 						</object>
 					</object>
-					<string key="NSFrameSize">{601, 149}</string>
+					<string key="NSFrameSize">{604, 180}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1578}}</string>
@@ -542,8 +542,8 @@ ZSBoZXJlLiIKZW5kIHRlbGw</string>
 						<reference key="object" ref="994473852"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="694766422"/>
 							<reference ref="570944635"/>
+							<reference ref="694766422"/>
 						</object>
 						<reference key="parent" ref="55987706"/>
 					</object>
@@ -671,16 +671,16 @@ ZSBoZXJlLiIKZW5kIHRlbGw</string>
 					<string>{{313, 1298}, {167, 23}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{998, 849}, {601, 149}}</string>
+					<string>{{998, 818}, {604, 180}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{998, 849}, {601, 149}}</string>
+					<string>{{998, 818}, {604, 180}}</string>
 					<boolean value="NO"/>
 					<boolean value="YES"/>
 					<string>{285, 126}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABBiAAAwv4AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABBiAAAww8AAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
