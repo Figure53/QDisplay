@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* QDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* QDisplay.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* QDisplayApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* QDisplayApp.m */; };
+		830FA88D13956F95004E4AAD /* QDisplay.icns in Resources */ = {isa = PBXBuildFile; fileRef = 830FA88C13956F95004E4AAD /* QDisplay.icns */; };
 		832B690F1304544F00D164CE /* QDisplay.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 832B690E1304544F00D164CE /* QDisplay.sdef */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -23,6 +24,7 @@
 		256AC3D90F4B6AC300CF3369 /* QDisplayApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDisplayApp.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* QDisplay_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDisplay_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		830FA88C13956F95004E4AAD /* QDisplay.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = QDisplay.icns; sourceTree = "<group>"; };
 		832B690E1304544F00D164CE /* QDisplay.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = QDisplay.sdef; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* QDisplay-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QDisplay-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* QDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 			children = (
 				8D1107310486CEB800E47090 /* QDisplay-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				830FA88C13956F95004E4AAD /* QDisplay.icns */,
 				1DDD58140DA1D0A300B32029 /* QDisplay.xib */,
 				832B690E1304544F00D164CE /* QDisplay.sdef */,
 			);
@@ -135,6 +138,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* QDisplay.xib in Resources */,
 				832B690F1304544F00D164CE /* QDisplay.sdef in Resources */,
+				830FA88D13956F95004E4AAD /* QDisplay.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
