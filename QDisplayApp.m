@@ -38,7 +38,6 @@
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[window center];
 	[window makeKeyAndOrderFront:self];
 	message = [[label stringValue] copy];
     countdownTargetTimeInterval = 0.0;
