@@ -4,7 +4,7 @@
 //
 //  Created by Christopher Ashworth on 2/10/11.
 //
-//  Copyright (c) 2011 Figure 53 LLC, http://figure53.com
+//  Copyright (c) 2011-2012 Figure 53 LLC, http://figure53.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -37,8 +37,8 @@
     double countdownTargetTimeInterval;
 }
 
-@property (copy) NSString *message;
-@property (copy) NSNumber *timeRemaining;
-@property (retain) IBOutlet NSWindow *window;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSNumber *timeRemaining;
+@property (nonatomic, retain) IBOutlet NSWindow *window;
 
 @end
