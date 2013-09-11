@@ -34,3 +34,12 @@ QDisplay does only one thing: display text.  You can only set the text using App
 	tell application "QDisplay"
 		set message to myMessage
 	end tell
+	
+*Example 3:*
+	
+	tell front workspace
+		set myTime to duration of cue "1"
+	end tell
+	tell application "QDisplay"
+		set timeRemaining to myTime
+	end tell
