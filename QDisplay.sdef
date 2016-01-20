@@ -60,6 +60,22 @@
 			<property name="message" code="qStr" description="The string to display." type="text">
 				<cocoa key="message"/>
 			</property>
+            
+            
+            
+            
+            <property name="messageSize" code="qSiz" description="The font Size of message." type="number">
+                <cocoa key="messageSize"/>
+            </property>
+            
+            <property name="messageColor" code="qCol" description="The font Color of message." type="text">
+                <cocoa key="messageColor"/>
+            </property>
+            
+            
+            
+            
+            
 			<property name="timeRemaining" code="qTim" description="The time in seconds to start counting down from." type="number">
 				<cocoa key="timeRemaining"/>
 			</property>
