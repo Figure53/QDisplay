@@ -38,8 +38,8 @@
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[window makeKeyAndOrderFront:self];
-	message = [[label stringValue] copy];
+    [window makeKeyAndOrderFront:self];
+    message = [[label stringValue] copy];
     countdownTargetTimeInterval = 0.0;
     countdownTimer = nil;
 }
@@ -48,13 +48,13 @@
 
 - (void) setMessage:(NSString *)newMessage
 {
-	[message autorelease];
-	message = [newMessage copy];
-	
-	if ( message )
-		[label setStringValue:message];
-	else
-		[label setStringValue:@""];
+    [message autorelease];
+    message = [newMessage copy];
+    
+    if ( message )
+        [label setStringValue:message];
+    else
+        [label setStringValue:@""];
 }
 
 @synthesize message;
@@ -72,6 +72,70 @@
 {
     return [NSNumber numberWithDouble:countdownTargetTimeInterval - [NSDate timeIntervalSinceReferenceDate]];
 }
+
+
+// Added 2016-01-20 by Mathias Halén
+@synthesize messageSize;
+
+- (void) setMessageSize:(NSNumber *)newSize
+{
+    double newMessageSize = [newSize doubleValue];
+    label.font = [NSFont systemFontOfSize:newMessageSize];
+}
+
+@synthesize messageColor;
+
+- (void) setMessageColor:(NSString *)newColor
+{
+    NSColor *theNewColor;
+
+    // MARK: Black & White
+    if ([newColor  isEqual: @"white"]) {
+        
+        theNewColor = [NSColor whiteColor];
+    }
+    if ([newColor  isEqual: @"black"]) {
+        
+        theNewColor = [NSColor blackColor];
+    }
+    
+    // MARK: Red & Green & Blue
+    if ([newColor  isEqual: @"red"]) {
+        
+        theNewColor = [NSColor redColor];
+    }
+    if ([newColor  isEqual: @"green"]) {
+        
+        theNewColor = [NSColor greenColor];
+    }
+    if ([newColor  isEqual: @"blue"]) {
+        
+        theNewColor = [NSColor blueColor];
+    }
+    // MARK: Cyan & Magenta & Yellow
+    if ([newColor  isEqual: @"cyan"]) {
+        
+        theNewColor = [NSColor cyanColor];
+    }
+    if ([newColor  isEqual: @"magenta"]) {
+        
+        theNewColor = [NSColor magentaColor];
+    }
+    if ([newColor  isEqual: @"yellow"]) {
+        
+        theNewColor = [NSColor yellowColor];
+    }
+    
+   
+    //theNewColor = [NSColor blueColor];
+    label.textColor = theNewColor;
+
+}
+
+
+// End of Added 2016-01-20 by Mathias Halén
+
+
 
 @end
 
