@@ -4,7 +4,7 @@
 //
 //  Created by Christopher Ashworth on 2/10/11.
 //
-//  Copyright (c) 2011-2012 Figure 53 LLC, http://figure53.com
+//  Copyright (c) 2011-2016 Figure 53 LLC, http://figure53.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -29,19 +29,19 @@
 
 @interface QDisplayApp : NSApplication <NSApplicationDelegate>
 {
-    NSString *message;
     NSWindow *window;
     IBOutlet NSTextField *label;
     IBOutlet NSTextField *countdownLabel;
     NSTimer *countdownTimer;
     double countdownTargetTimeInterval;
     
+    NSString *message;
+    NSNumber *messageSize;
     NSString *messageColor;
-    double  messageSize;
 }
 
 @property (nonatomic, copy) NSString *message;
-@property (nonatomic) double messageSize;
+@property (nonatomic, copy) NSNumber *messageSize;
 @property (nonatomic, copy) NSString *messageColor;
 @property (nonatomic, copy) NSNumber *timeRemaining;
 @property (nonatomic, retain) IBOutlet NSWindow *window;
