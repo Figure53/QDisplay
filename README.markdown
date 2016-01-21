@@ -23,7 +23,9 @@ QDisplay does only one thing: display text.  You can only set the text using App
 *Example 1:*
 
 	tell application "QDisplay"
-		set message to "Put your message here."
+		set message to "Put your big yellow message here."
+		set messageSize to 100
+		set messageColor to "yellow"
 	end tell
 
 *Example 2:*
