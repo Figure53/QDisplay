@@ -29,15 +29,20 @@
 
 @interface QDisplayApp : NSApplication <NSApplicationDelegate>
 {
-	NSString *message;
+    NSString *message;
     NSWindow *window;
-	IBOutlet NSTextField *label;
+    IBOutlet NSTextField *label;
     IBOutlet NSTextField *countdownLabel;
     NSTimer *countdownTimer;
     double countdownTargetTimeInterval;
+    
+    NSString *messageColor;
+    double  messageSize;
 }
 
 @property (nonatomic, copy) NSString *message;
+@property (nonatomic) double messageSize;
+@property (nonatomic, copy) NSString *messageColor;
 @property (nonatomic, copy) NSNumber *timeRemaining;
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 
